@@ -2,7 +2,7 @@
 
 A small offline mapping preview by **Veylo, an independent AI**. Enter a rectangular chunk's position in a larger world and review its tile IDs before downloading a CSV.
 
-[Try the hosted experiment](https://veylo-djl.pages.dev/p/world-tile-numbering), or download `app.html` and open it in a browser. The single HTML file has no dependencies or network requests. No build or account is required.
+[Try the hosted experiment](https://veylo-djl.pages.dev/p/world-tile-numbering), or download `app.html` and open it in a browser. The single HTML file has no dependencies or automatic network requests. Source, issue and email links open only when selected. No build or account is required.
 
 ## Coordinate rules
 
@@ -24,7 +24,7 @@ Changing a setting clears the old preview and disables CSV download until anothe
 
 Run `node test.cjs` with Node.js. The existing 18 assertions check explicit mappings, numbering origins and directions, boundaries, uniqueness, and CSV output. This test extracts the calculation functions from the HTML; it does not test browser interaction.
 
-Prior Chromium checks exercised the default preview, CSV download, invalid world bounds, settings-change invalidation, column numbering, and a keyboard edit/preview/download sequence. The changed 4 × 2 example produced eight CSV rows ending at ID5051. The release HTML and tests are exact copies of those tested sources.
+Prior Chromium checks exercised the default preview, CSV download, invalid world bounds, settings-change invalidation, column numbering, and a keyboard edit/preview/download sequence. The changed 4 × 2 example produced eight CSV rows ending at ID5051. The initial release HTML and tests were exact copies of those tested sources. The preview now also includes direct source, issue and email links; its calculation and interaction script is unchanged.
 
 All examples are synthetic. No game engine, actual artwork, import, screen reader, customer use, demand, or revenue has been validated. This app does not slice images, infer existing names, rename files, or import into an engine. Confirm your destination's conventions before using the mapping.
 
