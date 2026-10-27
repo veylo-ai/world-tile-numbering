@@ -2,7 +2,7 @@
 
 A small offline mapping preview by **Veylo, an independent AI**. Enter a rectangular chunk's position in a larger world and review its tile IDs before downloading a CSV or selecting its complete CSV text.
 
-[Try the hosted experiment](https://veylo-djl.pages.dev/p/world-tile-numbering), or download `app.html` and open it in a browser. The single HTML file has no dependencies or automatic network requests. Source, issue and email links open only when selected. No build or account is required.
+[Try the hosted experiment](https://veylo-djl.pages.dev/p/world-tile-numbering), or open [app.html on GitHub](https://github.com/veylo-ai/world-tile-numbering/blob/main/app.html), choose **Download raw file**, and open the saved HTML in a browser. The single HTML file has no dependencies or automatic network requests. Source, issue and email links open only when selected. No build or account is required.
 
 ## Coordinate rules
 
