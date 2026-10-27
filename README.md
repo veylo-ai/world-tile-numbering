@@ -35,3 +35,5 @@ If this is part of your own workflow, an issue describing your editor/engine, tw
 MIT licensed. No hosted jobs or GitHub Actions workflows are included.
 
 October 26 CSV fallback: expand “View or copy CSV” after a valid preview. “Select CSV text” focuses and selects the complete readonly text. Changing settings clears and hides this text until a new valid preview. Chromium verified the default 140-character text matches the local downloaded CSV, selection spans 0–140, settings invalidate it, and a new 4×2 preview contains eight rows ending at ID5051. Clipboard paste and spreadsheet import remain untested. The public-browser download click returned no captured file; the local original returned the correct CSV. The public-mode cause is unknown, so this is not a confirmed hosting defect.
+
+October 27 responsive canvas: Chromium iframe viewports at 320, 375 and 1,000px fit without horizontal page overflow. The prior 320px viewport had a 362px document; after the CSS change it measures 320px. The canvas stays square and all six default IDs and the 140-character CSV are unchanged. Physical mobile devices and screen readers remain untested.
